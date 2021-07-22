@@ -30,7 +30,6 @@
                 <div class="box">
                     <label for="fascia-eta">Fascia d'et&agrave;</label>
                     <select name="fascia-eta" id="fascia-eta">
-                        <option value="void"></option>
                         <option value="min">Minorenne</option>
                         <option value="mag">Maggiorenne</option>
                         <option value="over">Over</option>
@@ -38,8 +37,36 @@
                 </div>
             </div>
             <div class="btn-box">
-                <button id="generate-btn">Genera</button>
-                <button id="cancel-btn">Annulla</button>
+                <button id="generate-btn" class="btn">Genera</button>
+                <button id="cancel-btn" class="btn">Annulla</button>
+            </div>
+        </div>
+
+        <!-- Container a comparsa e scomparsa a seconda del btn che viene premuto -->
+        <h1 id="s-t" class="second-title">IL TUO BIGLIETTO</h1>
+        <div id="ticket" class="ticket-container">
+            <h2>DETTAGLIO PASSEGERI</h2>
+            <div class="ticket-row">
+                <div class="ticket-box name-box">
+                    <h3>NOME PASSEGGERO</h3>
+                    <p id="ticket-name" class="ticket-name"></p>
+                </div>
+                <div class="ticket-box">
+                    <h4>Offerta</h4>
+                    <p id="ticket-type" class="ticket-text"></p>
+                </div>
+                <div class="ticket-box">
+                    <h4>Carrozza</h4>
+                    <p id="ticket-carriage" class="ticket-text"></p>
+                </div>
+                <div class="ticket-box">
+                    <h4>Codice CP</h4>
+                    <p id="ticket-code" class="ticket-text"></p>
+                </div>
+                <div class="ticket-box">
+                    <h4>Costo biglietto</h4>
+                    <p id="ticket-price" class="ticket-text"></p>
+                </div>
             </div>
         </div>
     </main>

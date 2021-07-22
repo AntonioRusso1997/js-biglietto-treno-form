@@ -27,11 +27,15 @@ header {
     width: 80%;
     margin: 0 auto;
     background-color: white;
+    padding: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .row {
     display: flex;
     justify-content: center; 
+    margin-bottom: 50px;
 }
 
 .box {
@@ -40,6 +44,7 @@ header {
     justify-content: center;
     align-items: center;
     width: calc(100% / 6);
+    margin: 0 35px;
 }
 
 .btn-box {
@@ -47,4 +52,121 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.box label {
+    font-size: 20px;
+    color: #c12e64;
+    margin-bottom: 20px;
+}
+
+.box input,
+.box select {
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+    border: 1px solid #c12e64;
+    border-radius: 5px;
+}
+
+.box input {
+    width: 100%;
+}
+
+.box select {
+    height: 35px;
+}
+
+.box input:hover,
+.box select:hover {
+    background-color: #b91450;
+    color: white;
+}
+
+.btn {
+    background-color: lightgray;
+    color:#bb2a5f;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.ticket-container {
+    width: 80%;
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    display: none;
+
+}
+.ticket-row {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.second-title {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ticket-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.name-box {
+    background-color: gray;
+}
+
+.ticket-box h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.ticket-box h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.ticket-box p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ticket-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Aggiungo animazione */
+.ticket-animation {
+    animation: comparsa 2s ease 0s 1 normal;
+}
+
+@keyframes comparsa {
+    0%
+    { 
+        opacity: 0; 
+    }
+    60%
+    { 
+        opacity: 1; 
+    }
+}
+
+
 
