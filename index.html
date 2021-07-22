@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Calcolo Biglietto with Form</title>
 </head>
 <body>
     <header>
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <h1 class="main-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
 
     <main>
-        
+        <div class="container">
+            <div class="row">
+
+                <div class="box">
+                    <label for="name">Nome e Cognome</label>
+                    <input id="name" type="text" name="name" placeholder="Inserisci il tuo nome">
+                </div>
+                <div class="box">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" name="km" placeholder="Inserisci i Km">
+                </div>
+                <div class="box">
+                    <label for="fascia-eta">Fascia d'et&agrave;</label>
+                    <select name="fascia-eta" id="fascia-eta">
+                        <option value="void"></option>
+                        <option value="min">Minorenne</option>
+                        <option value="mag">Maggiorenne</option>
+                        <option value="over">Over</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button id="generate-btn">Genera</button>
+                <button id="cancel-btn">Annulla</button>
+            </div>
+        </div>
     </main>
 
     <script src="js/main.js"></script>
